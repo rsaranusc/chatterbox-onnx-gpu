@@ -10,7 +10,7 @@ import numpy as np
 from chatterbox_onnx import ChatterboxOnnx
 
 
-def chunk_text(text, chunk_size=400):
+def chunk_text(text, chunk_size=300):
     """
     Split text into chunks of approximately chunk_size characters,
     respecting word boundaries and avoiding splits in the middle of words.
