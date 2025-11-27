@@ -149,7 +149,7 @@ class ChatterboxOnnx:
         )
 
         # Create session with CUDA execution provider
-        providers = ['CUDAExecutionProvider', 'CPUExecutionProvider']
+        providers = ['TensorrtExecutionProvider','CUDAExecutionProvider', 'CPUExecutionProvider']
         return onnxruntime.InferenceSession(path, providers=providers)
 
     def _load_models(self):
