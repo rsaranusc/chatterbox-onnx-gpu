@@ -1,7 +1,0 @@
-This is a sample plain text file for testing the Chatterbox TTS system.
-
-It contains multiple paragraphs and should demonstrate that the system can handle both .md and .txt files seamlessly.
-
-The text chunking algorithm should process this content appropriately, breaking it into manageable pieces for speech synthesis.
-
-Testing multiple file types ensures robust directory processing capabilities.
