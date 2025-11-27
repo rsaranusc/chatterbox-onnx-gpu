@@ -10,7 +10,7 @@ import numpy as np
 from chatterbox_onnx import ChatterboxOnnx
 
 
-def chunk_text(text, chunk_size=300):
+def chunk_text(text, chunk_size=400):
     """
     Split text into chunks of approximately chunk_size characters,
     respecting word boundaries and avoiding splits in the middle of words.
@@ -137,7 +137,7 @@ def process_text_file(input_file, output_dir, synthesizer, target_voice, exagger
         output_file = os.path.join(output_dir, f"{base_name}.wav")
         
         # Chunk the text
-        chunks = chunk_text(text, chunk_size=300)
+        chunks = chunk_text(text)
         print(f"Text split into {len(chunks)} chunk(s)")
         
         # Process chunks
