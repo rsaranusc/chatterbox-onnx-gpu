@@ -1,0 +1,8 @@
+librosa
+numpy
+onnxruntime-gpu
+soundfile
+huggingface_hub
+click
+tokenizers
+pyperclip
